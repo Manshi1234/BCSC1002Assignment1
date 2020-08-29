@@ -49,6 +49,13 @@ public class Book {
     public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
+
+    public String toString() {
+        return "Name of Book:" + " " + this.nameOfBooks + "\n"
+                + "Name Of Author:" + " " + getNameOfAuthors() + "\n"
+                + "ISBM Code Of The Book:" + " " + this.isbnNumberOfBooks + ",";
+    }
 }
+
 
 
