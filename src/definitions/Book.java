@@ -55,6 +55,10 @@ public class Book {
                 + "Name Of Author:" + " " + getNameOfAuthors() + "\n"
                 + "ISBM Code Of The Book:" + " " + this.isbnNumberOfBooks + ",";
     }
+
+    public void doCheckout() {
+        System.out.println("THANK YOU FOR RENTING A BOOK.");
+    }
 }
 
 
