@@ -59,6 +59,10 @@ public class Book {
     public void doCheckout() {
         System.out.println("THANK YOU FOR RENTING A BOOK.");
     }
+
+    public void doReturn() {
+        System.out.println("THANK YOU FOR RETURNING THE BOOK.");
+    }
 }
 
 
