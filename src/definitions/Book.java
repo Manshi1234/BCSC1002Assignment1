@@ -11,5 +11,11 @@ public class Book {
     private String nameOfAuthors;
     // since it Should be a of 13 Digits
     private String isbnNumberOfBooks;
+
+    public Book() {
+        this.nameOfBooks = "PHYSICS";
+        this.nameOfAuthors = "S.L.ARORA";
+        this.isbnNumberOfBooks = "4657893425097";
+    }
 }
 
