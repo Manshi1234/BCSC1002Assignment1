@@ -55,7 +55,14 @@ public class Library {
      */
 
     public void addBooks(String bookName) {
-        System.out.println(bookName + ",is succesfully added.");
+        System.out.println(bookName + ",is successfully added.");
+    }
+
+    /**
+     * THIS METHOD WILL ALLOW US TO ISSUE A BOOK FROM THE LIBRARY
+     */
+    public void doCheckOut(String bookName) {
+        System.out.println(bookName + ",is Issued To You Successfully.");
     }
 
 
