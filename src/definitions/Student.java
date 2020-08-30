@@ -8,20 +8,20 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
-    private String firstNameOfStudent;
-    private String middleNameOfStudent;
-    private String lastNameOfStudent;
+    private String firstName;
+    private String middleName;
+    private String lastName;
     private long studentUniversityRollNo;
     private int numberOfBooksIssued;
     private Book[] BooksIssuedByStudent;
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS
 
-    public Student(String firstNameOfStudent, String secondNameOfStudent, String lastNameOfStudent,
+    public Student(String firstName, String secondName, String lastName,
                    long studentUniversityRollNo, int numberOfBooksIssued) {
-        this.firstNameOfStudent = firstNameOfStudent;
-        this.middleNameOfStudent = middleNameOfStudent;
-        this.lastNameOfStudent = lastNameOfStudent;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
         this.studentUniversityRollNo = studentUniversityRollNo;
         this.numberOfBooksIssued = numberOfBooksIssued;
 
@@ -32,28 +32,28 @@ public class Student {
         this.BooksIssuedByStudent = new Book[20];
     }
 
-    public String getFirstNameOfStudent() {
-        return firstNameOfStudent;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstNameOfStudent(String firstNameOfStudent) {
-        this.firstNameOfStudent = firstNameOfStudent;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getMiddleNameOfStudent() {
-        return middleNameOfStudent;
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public void setMiddleNameOfStudent(String middleNameOfStudent) {
-        this.middleNameOfStudent = middleNameOfStudent;
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
-    public String getLastNameOfStudent() {
-        return lastNameOfStudent;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastNameOfStudent(String lastNameOfStudent) {
-        this.lastNameOfStudent = lastNameOfStudent;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public long getStudentUniversityRollNo() {
@@ -84,15 +84,15 @@ public class Student {
         Student student = (Student) o;
         return getStudentUniversityRollNo() == student.getStudentUniversityRollNo() &&
                 numberOfBooksIssued == student.numberOfBooksIssued &&
-                Objects.equals(getFirstNameOfStudent(), student.getFirstNameOfStudent()) &&
-                Objects.equals(getMiddleNameOfStudent(), student.getMiddleNameOfStudent()) &&
-                Objects.equals(getLastNameOfStudent(), student.getLastNameOfStudent()) &&
+                Objects.equals(getFirstName(), student.getFirstName()) &&
+                Objects.equals(getMiddleName(), student.getMiddleName()) &&
+                Objects.equals(getLastName(), student.getLastName()) &&
                 Arrays.equals(BooksIssuedByStudent, student.BooksIssuedByStudent);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(getFirstNameOfStudent(), getMiddleNameOfStudent(), getLastNameOfStudent(), getStudentUniversityRollNo(), numberOfBooksIssued);
+        int result = Objects.hash(getFirstName(), getMiddleName(), getLastName(), getStudentUniversityRollNo(), numberOfBooksIssued);
         result = 31 * result + Arrays.hashCode(BooksIssuedByStudent);
         return result;
     }
