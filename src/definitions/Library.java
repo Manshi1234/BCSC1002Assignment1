@@ -65,5 +65,10 @@ public class Library {
         System.out.println(bookName + ",is Issued To You Successfully.");
     }
 
-
+    /**
+     * this Method Will help in returning the Issued Book
+     */
+    public void doReturn(String bookName) {
+        System.out.println(bookName + ",is Returned Successfully.");
+    }
 }
