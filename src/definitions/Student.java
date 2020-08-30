@@ -4,6 +4,7 @@
  *  File Name : Student.java
  * */
 package definitions;
+import java.util.Arrays;
 
 public class Student {
     private String firstNameOfStudent;
@@ -68,5 +69,10 @@ public class Student {
 
     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
         this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(BooksIssuedByStudent);
     }
 }
